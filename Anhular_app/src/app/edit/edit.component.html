@@ -1,0 +1,41 @@
+<div class="card mx-5 my-2">
+  <div class="card-header">
+    <h4>Edit Customer</h4>
+<form [formGroup]="loginForm" class="mx-5">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text"  class="form-control" formControlName="firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" formControlName="lastName">
+  </div>
+  <div class="form-group">
+    <label for="registerDate">Telephone</label>
+    <input type="text" class="form-control" formControlName="registerDate">
+  </div>
+  <h5 class="text-muted px=0">ADDRESS</h5>
+  
+  <div class="form-group">
+    <label for="firstLine">First Line</label>
+    <input type="text" class="form-control" formControlName="firstLine">
+  </div>
+  <div class="form-group">
+    <label for="secondLine">Second Line</label>
+    <input type="text" class="form-control" formControlName="secondLine">
+  </div>
+  <div class="form-group">
+    <label for="city">City/label</label>
+    <input type="text" class="form-control" formControlName="city">
+  </div>
+  <div class="form-group">
+    <label for="state">State</label>
+    <input type="text" class="form-control" formControlName="state">
+  </div>
+  <div class="form-group">
+    <label for="postalCode">Postal Code</label>
+    <input type="text" class="form-control" formControlName="postalCode">
+  </div>
+  <button class="btn btn-primary" (click)="save()">UPDATE</button>
+</form>
+  </div></div>

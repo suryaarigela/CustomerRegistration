@@ -1,0 +1,15 @@
+<form [formGroup]="loginForm" class="myForm">
+  <div class="form-group">
+    <label for="name">First Name</label>
+    <input type="text" style="width:20%" class="form-control" formControlName="firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" formControlName="lastName">
+  </div>
+  <div class="form-group">
+    <label for="registerDate">Register Date</label>
+    <input type="text" class="form-control" formControlName="registerDate">
+  </div>
+  <button class="btn btn-primary" (click)="save()">SAVE</button>
+</form>

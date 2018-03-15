@@ -1,0 +1,41 @@
+<section id="posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <h4>Customers</h4>
+            <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>
+                    #
+                  </th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Registered Date</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let cust of customers">
+                  <td scope="row">{{cust.id}}</td>
+                  <td>{{cust.firstName}}</td>
+                  <td>{{cust.lastName}}</td>
+                  <td>{{cust.registerDate}}</td>
+                  <!--<td><a  [routerLink]="['/edit/cust.id']" (click)="edit(cust.id)"><i class="fa fa-edit" style="font-size:24px;color:black"></i></a></td>-->
+                 <td><button  (click)="openDialog(cust.id)"><i class="fa fa-edit" style="font-size:24px;color:black"></i></button></td>
+                  <td><button  (click)="delete(cust.id)"><i class="fa fa-remove" style="font-size:24px;color:black"></i></button></td>
+                </tr> 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+    </div>
+  </div>
+</section>
