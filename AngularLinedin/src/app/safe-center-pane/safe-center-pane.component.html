@@ -1,0 +1,39 @@
+
+
+
+<div *ngFor="let user of Users" class="card my-2">
+    <div class="card-header">
+       
+      <div class="row">
+        <div class="col-md-1">
+        <img src="./assets/img/{{user}}.jpeg"  alt="" class="img-fluid rounded-circle mb-3 round-img" width="50" height="50">
+      </div>
+       <div class="col">
+        <h6>{{user}} </h6>
+        </div>
+  
+      </div>
+    </div>
+    <div class="card-body">
+        body1
+      </div>
+      <div class="card-footer">
+          <div class="row">
+            <div class="col-md-2">
+                <a href="" class="nav-link"><i class="fa fa-thumbs-up"></i>like</a>
+            </div>
+            <div class="col-md-3">
+                <a href="" class="nav-link"><i class="fa fa-comment"></i>
+                  Comment</a>
+              </div>
+              <div class="col-md-2">
+                  <a href="" class="nav-link"><i class="fa fa-share"></i>
+                    Share</a>
+                </div>
+          </div>
+                
+              
+                 
+                
+        </div>
+  </div>

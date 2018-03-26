@@ -1,0 +1,29 @@
+
+<div class="row">
+  <div *ngFor="let profile of profiles" class="col-md-3">
+      <div class="card my-2" style="width:104%;">
+          <div class="card-header bg-primary" style="height:50px"></div>
+          <div class="card-body">
+            <img src="./assets/img/{{profile.name}}.jpeg"  alt="" width="60" height="60" class="img-fluid rounded-circle  mb-3 round-img">
+            <h3 class="align-center">{{profile.name}}</h3>
+           
+            <p>{{profile.role}}</p>
+            <p>{{profile.company}}</p> 
+           <div class="d-flex flex-row justify-content-center">
+    
+             <div class="p-4">
+               <a href="#">
+                 <div class="btn btn-primary" (click)="connect(profile)">CONNECT</div>
+               </a>
+             </div>
+            
+           </div>
+          </div>
+        </div>
+  </div>
+  
+</div>
+   
+      
+    
+    

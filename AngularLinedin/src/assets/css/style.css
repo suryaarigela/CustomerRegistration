@@ -1,0 +1,40 @@
+.backcolor {
+  background-color: #536172; }
+
+.body-section {
+  background-image: url("../img/linkedIN.jpeg");
+  height: 650px; }
+
+.card-size {
+  width: 26rem;
+  margin-left: 450px; }
+
+.footer {
+  margin-left: 0px;
+  background-color: #536172; }
+
+.search-user {
+  margin-left: 420px; }
+
+.divider {
+  height: 1px;
+  width: 90%;
+  display: block;
+  /* for use on default inline elements like span */
+  margin: 9px 0;
+  margin-left: 53px;
+  margin-right: 3px;
+  overflow: hidden;
+  background-color: #e5e5e5; }
+
+p.oblique {
+  font-style: oblique; }
+
+  .outer {
+    
+    background:rgb(247, 247, 250);
+    margin:100px auto 0 auto;
+    display:block;
+    padding-top:1px;
+}
+

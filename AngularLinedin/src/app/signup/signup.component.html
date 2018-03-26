@@ -1,0 +1,44 @@
+<div class="col-md-12 offset-md-3 body-section">
+  <span class="anchor" id="formRegister"></span>
+  <hr class="mb-5">
+
+  <!-- form card register -->
+  <div class="card card-outline-primary card-size">
+      <div class="card-header">
+          <h3 class="mb-0">Sign Up</h3>
+      </div>
+      <div class="card-body">
+          <form [formGroup]="signupForm" class="form" role="form" autocomplete="off">
+              <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" formControlName="name" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                  <label for="inputEmail3">Email</label>
+                  <input type="email" class="form-control" id="inputEmail3" formControlName="email" placeholder="Email" >
+              </div>
+              <div class="form-group">
+                  <label for="inputPassword3">Password</label>
+                  <input type="password" class="form-control" id="inputPassword3" formControlName="password" placeholder="Password" >
+              </div>
+              
+              <div *ngIf="password.invalid" class="danger"><h5 class="alert alert-danger">{{password.errors.password.message}}</h5></div>
+  
+              <div class="form-group">
+                  <label for="inputVerify3">Verify</label>
+                  <input type="password" class="form-control" id="inputVerify3" formControlName="confirmpassword" placeholder="Password (again)" >
+              </div>
+              <div class="form-group" *ngIf="!signupForm.valid; else other">
+                  <button type="submit" class="btn btn-success btn-lg float-right" (click)="submitForm()" disabled>Register</button>
+              </div>
+
+              <ng-template #other>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success btn-lg float-right" (click)="submitForm()" >Register</button>
+              </div></ng-template>
+          </form>
+      </div>
+  </div>
+  <!-- /form card register -->
+
+</div>

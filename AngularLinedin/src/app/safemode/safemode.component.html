@@ -1,0 +1,17 @@
+<div>
+<app-safe-header></app-safe-header>
+</div>
+<div class="outer">
+<div class="row ">
+  <div class="col-md-3">
+    <app-safe-left-pane [name]="user"></app-safe-left-pane>
+  </div>
+  <div class="col-md-6">
+    <router-outlet></router-outlet>
+   <!-- <app-safe-center-pane></app-safe-center-pane>-->
+  </div>
+  <div class="col-md-3">
+<app-safe-right-pane></app-safe-right-pane>
+  </div>
+</div>
+</div>
